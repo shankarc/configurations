@@ -1,0 +1,11 @@
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+o#added
+shelltitle ''
+
+startup_message off
+shell -${SHELL}
+caption always "%n(%t) : %C"
+defscrollback 1024
+shelltitle "$ |bash"
