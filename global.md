@@ -7,8 +7,6 @@
 ###  Tell globals to use ctags
     export GTAGSLABEL=ctags
 
-
-     
 ## Add new language
    
 ### Add .thrift 
