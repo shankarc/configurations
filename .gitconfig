@@ -1,0 +1,28 @@
+[user]
+	name = Shankar Chakkere
+	email = schakkere@42six.com
+[core]
+	excludesfile = /Users/schakkere/.gitignore_global
+	autocrlf = false
+[difftool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
+[push]
+	default = simple
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+    prompt = false
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+	trustExitCode = true
