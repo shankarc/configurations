@@ -143,11 +143,11 @@ export EDITOR
 #export LM_LICENSE_FILE=/home/demo.dat 
 #export VECTOR_LICENSE_FILE=40000@192.168.1.6
 unset CDPATH
-export CDPATH
-#export JAVA_HOME=$(/usr/libexec/java_home)
-#export PATH=${JAVA_HOME}/bin:$PATH
-#export M2_HOME=/usr/share/maven
-#export PATH=/usr/local/bin:${M2_HOME}/bin:$PATH
+#export CDPATH
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=${JAVA_HOME}/bin:$PATH
+export M2_HOME=/usr/share/maven
+export PATH=/usr/local/bin:${M2_HOME}/bin:$PATH
 export PATH=$PATH:/Users/schakkere/bin
 # Generate password
 #usage genpasswd 16
@@ -182,7 +182,7 @@ function title {
 }
 #02/19/14 
 #for using source-highlight
-#export LESSOPEN="| /usr/local/Cellar/source-highlight/3.1.7/bin/src-hilite-lesspipe.sh %s"
+export LESSOPEN="| /usr/local/Cellar/source-highlight/3.1.7/bin/src-hilite-lesspipe.sh %s"
 export LESS=' -RFX '
 #use vim as less
 alias vless='vim -R -c "set number" -u /usr/share/vim/vim73/macros/less.vim'
@@ -205,3 +205,8 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 export HISTCONTROL=ignoreboth
 # Let gtags use ctags
 export GTAGSLABEL=ctags
+function usdate() {
+date "+DATE: %m/%d/%y%nTIME: %H:%M:%S"
+}
+# for pandoc: pdflatex not found
+export PATH=$PATH:/usr/texbin

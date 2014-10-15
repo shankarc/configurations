@@ -265,10 +265,22 @@ set showcmd          " show (partial) command in status line
 "mkdir -p ~/.vim/autoload ~/.vim/bundle; \
 "curl -Sso ~/.vim/autoload/pathogen.vim \
 "    https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-"call  pathogen#infect()    
+call  pathogen#infect()    
 "git submodule add -f git://github.com/rodjek/vim-puppet.git .vim/bundle/puppet
 "03/21/14 
 " save readonly file
 " sudo write
 noremap sudow w !sudo tee % >/dev/null
+"thrift syntax
+au BufRead,BufNewFile *.thrift set filetype=thrift
+au! Syntax thrift source ~/.vim/thrift.vim
+set modeline
+"08/07/14 
+:highlight DiffAdd ctermbg=Black
+:highlight DiffChange ctermbg=Black
+:highlight DiffDelete ctermbg=Black
+:highlight DiffText cterm=Bold ctermbg=None
+"save readonly file from vim
+cnoremap sudow w !sudo tee % > /dev/null
 
+:setlocal spell spelllang=en_us
