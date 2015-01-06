@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>EzFrontend</title>
+    <link href='style.css' rel='stylesheet'>
+    <link href='//dash_ref/Category/Build EzReverse Proxy Thrift/1'>
+    <link href='//dash_ref_Build EzReverse Proxy Thrift/Entry/Generating the thrift code/0'>
+    <link href='//dash_ref/Category/Install generated ezbake-reverseproxy-thrift library/1'>
+    <link href='//dash_ref_Install generated ezbake-reverseproxy-thrift library/Entry/Update ezbake-reverseproxy-thrift module in vagrant/0'>
+    <link href='//dash_ref_Install generated ezbake-reverseproxy-thrift library/Entry/Uninstall previous version/0'>
+  </head>
+  <body>
+    <header>
+      <h1>EzFrontend</h1>
+    </header>
+    <article>
+      <p><p>Cheat sheet for building ezFrontnd See <a href="https://git.lab76.org/ezbakesecurity/eznginx-ezsecurity">EzBakeSecurity / EzNginx-EzSecurity | GitLab</a></p></p>
+      <section class='category'>
+        <h2 id='//dash_ref/Category/Build EzReverse Proxy Thrift/1'>
+          Build EzReverse Proxy Thrift
+        </h2>
+        <table>
+          <tr id='//dash_ref_Build EzReverse Proxy Thrift/Entry/Generating the thrift code/0'>
+            <td class='command'>
+              <p>
+                <code>mvn generate-resources -P gen-thrift</code>
+              </p>
+            </td>
+            <td class='description'>
+              <div class='name'><p>Generating the thrift code</p></div>
+              <div class='notes'><p>Run this command on host machine.</p></div>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class='category'>
+        <h2 id='//dash_ref/Category/Install generated ezbake-reverseproxy-thrift library/1'>
+          Install generated ezbake-reverseproxy-thrift library
+        </h2>
+        <table>
+          <tr id='//dash_ref_Install generated ezbake-reverseproxy-thrift library/Entry/Update ezbake-reverseproxy-thrift module in vagrant/0'>
+            <td class='command'>
+              <p>
+                <code>sudo &#39;which pip&#39; install .</code>
+              </p>
+            </td>
+            <td class='description'>
+              <div class='name'><p>Update ezbake-reverseproxy-thrift module in vagrant</p></div>
+              <div class='notes'>
+                <p>In vagrant:
+                After changing to
+                <code>&#x000A;/ezbake-reverseproxy-thrift/src/main/python</code>
+                run this command. The setup.py has the version number of the module
+                Note: Make sure to uninstall the previous version.</p>
+              </div>
+            </td>
+          </tr>
+          <tr id='//dash_ref_Install generated ezbake-reverseproxy-thrift library/Entry/Uninstall previous version/0'>
+            <td class='command'>
+              <p>
+                <code>sudo `which pip` uninstall -y ezbake-reverseproxy-thrift</code>
+              </p>
+            </td>
+            <td class='description'>
+              <div class='name'><p>Uninstall previous version</p></div>
+              <div class='notes'><pre class="highlight plaintext">[vagrant@localhost python]$ pip list&#x000A;....... &#x000A;ezbake-infrastructure-ssl-socket (2.1rc1)&#x000A;ezbake-reverseproxy-thrift (2.1rc1.dev20141231155056170287)&#x000A;[vagrant@localhost python]$ sudo `which pip` uninstall -y ezbake-reverseproxy-thrift&#x000A;Uninstalling ezbake-reverseproxy-thrift-2.1rc1.dev20141231155056170287:&#x000A;Successfully uninstalled ezbake-reverseproxy-thrift-2.1rc1.dev20141231155056170287&#x000A;Installing&#x000A;[ezbake-reverseproxy-thrift/src/main/python]$ sudo `which pip` install .&#x000A;Processing /vagrant/ezbake-reverseproxy-thrift/src/main/python&#x000A;Installing /opt/python-2.7.6/lib/python2.7/site-packages/ezbake_reverseproxy_thrift-2.1rc1.dev20150106215102063346-py2.7-nspkg.pth&#x000A;Successfully installed ezbake-reverseproxy-thrift-2.1rc1.dev20150106215102063346</pre></div>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class='notes'>
+        <h2>Notes</h2>
+        <ul>
+        <li>Created by Shankar Chakkere</li>
+        </ul>
+      </section>
+    </article>
+    <footer>
+      You can modify and improve this cheat sheet <a onclick="window.dash.openExternal_(this.href); return false;" href="http://cheat.kapeli.com">here</a>
+    </footer>
+  </body>
+</html>
