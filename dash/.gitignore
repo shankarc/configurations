@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# But not these
+!*.py
+!*.rb
+!*.cpp
+!*.sh
+!.gitignore
+!*.md
+!*.txt
+
