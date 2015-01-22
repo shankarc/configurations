@@ -18,47 +18,50 @@ cheatsheet do
         end
 
     end
-    
+
     category do
         id 'Install generated ezbake-reverseproxy-thrift library'
+
+    entry do
+            command " sudo `which pip` uninstall -y ezbake-reverseproxy-thrift"
+            name 'Uninstall previous version'
+            notes "
+                In Vagrant:
+
+                ```
+                [vagrant@localhost python]$ pip list
+                .......
+                ezbake-reverseproxy-thrift (2.1rc1.dev20141231155056170287)
+                [vagrant@localhost python]$ sudo `which pip` uninstall -y ezbake-reverseproxy-thrift
+                Uninstalling ezbake-reverseproxy-thrift-2.1rc1.dev20141231155056170287:
+                Successfully uninstalled ezbake-reverseproxy-thrift-2.1rc1.dev20141231155056170287
+                ```
+            "
+        end
 
         entry do
             command 'sudo \'which pip\' install .'
             name 'Update ezbake-reverseproxy-thrift module in vagrant'
             notes "
                 In vagrant:
-                After changing to
-                ```
-                /ezbake-reverseproxy-thrift/src/main/python
-                ```
+               Change to ``` /ezbake-reverseproxy-thrift/src/main/python ``` directory and
                 run this command. The setup.py has the version number of the module
-                Note: Make sure to uninstall the previous version.
-                "
-        end
-        entry do
-            command " sudo `which pip` uninstall -y ezbake-reverseproxy-thrift"
-            name 'Uninstall previous version'
-            notes "
+
+                **Note**: Make sure to uninstall the previous version.
+
                 ```
-                [vagrant@localhost python]$ pip list
-                ....... 
-                ezbake-infrastructure-ssl-socket (2.1rc1)
-                ezbake-reverseproxy-thrift (2.1rc1.dev20141231155056170287)
-                [vagrant@localhost python]$ sudo `which pip` uninstall -y ezbake-reverseproxy-thrift
-                Uninstalling ezbake-reverseproxy-thrift-2.1rc1.dev20141231155056170287:
-                Successfully uninstalled ezbake-reverseproxy-thrift-2.1rc1.dev20141231155056170287
-                Installing
                 [ezbake-reverseproxy-thrift/src/main/python]$ sudo `which pip` install .
                 Processing /vagrant/ezbake-reverseproxy-thrift/src/main/python
                 Installing /opt/python-2.7.6/lib/python2.7/site-packages/ezbake_reverseproxy_thrift-2.1rc1.dev20150106215102063346-py2.7-nspkg.pth
                 Successfully installed ezbake-reverseproxy-thrift-2.1rc1.dev20150106215102063346
                 ```
-            "
+                "
         end
-        
+
+
 
     end
     notes "
-        * Created by Shankar Chakkere
+        * Created by Shankar Chakkere Jan 6, 2014
     "
 end
