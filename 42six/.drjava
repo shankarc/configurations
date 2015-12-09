@@ -1,0 +1,31 @@
+#DrJava configuration file
+#Mon Oct 05 11:32:27 EDT 2015
+extra.classpath = /Users/schakkere/introcs/stdlib.jar:/Users/schakkere/introcs/algs4.jar:/Users/schakkere/introcs/java3d/j3dcore.jar:/Users/schakkere/introcs/java3d/j3dutils.jar:/Users/schakkere/introcs/java3d/vecmath.jar:/Users/schakkere/introcs/java3d/gluegen-rt.jar:/Users/schakkere/introcs/java3d/jogl.jar
+all.compiler.versions = true
+right.margin.columns = 80
+lineenum.enabled = true
+key.delete.next = [shift DELETE]
+key.delete.previous = [shift BACK_SPACE]
+interactions.exit.prompt = false
+interactions.reset.prompt = false
+save.before.compile = true
+compile.before.junit = true
+save.before.javadoc = true
+indent.level = 4
+auto.close.comments = true
+files.backup = false
+recent.files = [/Users/schakkere/Development/git/My/pwb/Java/TestMD5.java,/Users/schakkere/Development/git/My/pwb/Java/TestProperties.java,/Users/schakkere/Development/git/My/pwb/Java/TestStringFormat.java,/Users/schakkere/Development/java/Sandbox/ReverseToken.java,/Users/schakkere/Development/java/Sandbox/print_diamond.java]
+window.height = 1035
+window.width = 1920
+window.x = -1809
+window.y = 241
+window.state = 6
+doc.list.width = 59
+last.dir = /Users/schakkere/Development/git/My/pwb/Java/TestMD5.java
+last.interactions.dir = /Users/schakkere/Development/git/My/pwb/Java
+dialog.clipboard.history.state = 640 400 3009 357
+dialog.completeword.javaapi = true
+tabbedpanes.state = 720 450 700 400
+dialog.drjava.survey.enabled = false
+new.version.notification = none (disabled)
+file.ext.registration = always

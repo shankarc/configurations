@@ -1,0 +1,17 @@
+--sort-files
+--color
+--pager=less
+# Ingore HTML dir
+--ignore-dir=HTML
+# Define your own type
+--type-set=aspx=.aspx,.ascx
+--type-set=thrift=.thrift
+# Match the target file exaclty like Makefile
+--type-set=make:is:Makefile
+# To ignore a single file using ack 2.0
+--ignore-file=is:cljout.js
+# Handle .md Markdown files
+--type-set=md=.mkd
+--type-add=md=.md
+# 
+--type-set=maven=pom.xml

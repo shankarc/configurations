@@ -1,0 +1,30 @@
+--langdef=thrift
+--langmap=thrift:.thrift
+--regex-thrift=/^[ \t]*struct[ \t]*([a-zA-Z0-9_]+)/\1/c,classes/
+--regex-thrift=/^[ \t]*enum[ \t]*([a-zA-Z0-9_]+)/\1/T,types/
+--regex-thrift=/^[ \t]*[a-zA-Z0-9_<>\.]+[ \t]*([a-zA-Z0-9_]+)\(/\1/m,methods/
+--regex-thrift=/^[ \t]*([A-Z0-9_]+)[ \t]*=/\1/C,constants/
+--langdef=puppet
+--langmap=puppet:.pp
+--regex-puppet=/^class[ \t]*([:a-zA-Z0-9_-]+)[ \t]*/\1/d,definition/
+--regex-puppet=/^site[ \t]*([a-zA-Z0-9_-]+)[ \t]*/\1/d,definition/
+--regex-puppet=/^node[ \t]*([a-zA-Z0-9_-]+)[ \t]*/\1/d,definition/
+--regex-puppet=/^define[ \t]*([:a-zA-Z0-9_-]+)[ \t]*/\1/d,definition/
+--langdef=nagios
+--langmap=nagios:.cfg
+--regex-nagios=/host_name\s+([^ ]+)/\1/h,hostname/
+--regex-nagios=/service_description\s+([^ ]+)/\1/s,service/
+--regex-nagios=/timeperiod_name\s+([^ ]+)/\1/t,timeperiod/
+--regex-nagios=/command_name\s+([^ ]+)/\1/c,command/
+--regex-nagios=/contact_name\s+([^ ]+)/\1/x,contact/
+--regex-nagios=/servicegroup_name\s+([^ ]+)/\1/g,servicegroup/
+--regex-nagios=/hostgroup_name\s+([^ ]+)/\1/H,hostgroup/
+--regex-nagios=/name\s+([^ ]+)/\1/n,name/
+--regex-nagios=/alias\s+([^ ]+)/\1/a,alias/
+--langdef=Exec
+--langmap=Exec:..
+--langdef=markdown
+--langmap=markdown:.md
+--langdef=XML
+--langmap=XML:.xml
+--regex-XML=/id="([a-zA-Z0-9_]+)"/\1/d,definition/
