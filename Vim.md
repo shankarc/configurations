@@ -361,9 +361,9 @@ dlrt\_buffer += length\_copied; }
 
 I used this when I change some things on\
  IDE and need power of VIM to complete it.\
- [Shankar@dasher include]\$ /bin/ls -rt |tail -1\
+ [Shankar]\$ /bin/ls -rt |tail -1\
  cmd\_Configuration\_File.h\
- [Shankar@dasher include]\$ /bin/ls -rt |tail -1 | xargs bash -c
+ [Shankar]\$ /bin/ls -rt |tail -1 | xargs bash -c
 '\</dev/tty vim "\$@"' ignoreme
 
 xargs points stdin to /dev/null From OSX/BSD man xargs
@@ -437,44 +437,7 @@ To convert // Input:
 
 To do
 
-// Purpose: // A method that informs CMD that an Telecommand(PUS TC) is
-available for
 
-// command stack parsing, validation and subsequent execution from
-
-// platform computer(PFC). The TC may contain one or more embedded
-
-// command stacks. A command stack is a collection of commands,
-
-// identified by the command count of its first command, which will be
-
-// parsed, validated and enqued for execution. Command stacks may be
-time
-
-// tagged to execute at some future time, or may be executed
-immediately.
-
-// At most one command is distributed for execution per l-frame.
-
-// The current command must be accepted or rejected before the
-
-// next command is distributed. \
- To this\
- // Purpose: A method that informs CMD that an Telecommand(PUS TC) is
-available for
-
--   // command stack parsing, validation and subsequent execution from
--   // platform computer(PFC). The TC may contain one or more embedded
--   // command stacks. A command stack is a collection of commands,
--   // identified by the command count of its first command, which will
-    be
--   // parsed, validated and enqued for execution. Command stacks may be
-    time
--   // tagged to execute at some future time, or may be executed
-    immediately.
--   // At most one command is distributed for execution per l-frame.
--   // The current command must be accepted or rejected before the
--   // next command is distributed. \
      :340,358s/.\*\\/\\/\\s\*\\zs/ /\
      explantion:\
      \<range\> match \<and number of char\>//\<space\>one or more\<end
