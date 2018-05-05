@@ -1,0 +1,17 @@
+Grokking vim
+#Here
+one
+two
+three
+#There
+To change within #Here and #There Block
+:g/#Here/  -- find Here
+:g/#Here/.1 -- move one line 
+:g/#Here/.1, -- the start of range
+:g/#Here/.1,/#There/ -- find There
+:g/#Here/.1,/#There/- -- move a line above, this becomes end of range
+:g/#Here/.1,/#There/-s/one/1/gp  -- change one to 1 in the block
+
+Print line with match and next line
+:g/one/.,.+2p  -- get line with one print that line and next two line
+

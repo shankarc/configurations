@@ -1,6 +1,6 @@
 [user]
 	name = Shankar Chakkere
-	email = schakkere@42six.com
+	email = 
 [core]
 	excludesfile = /Users/schakkere/.gitignore_global
 	autocrlf = false
