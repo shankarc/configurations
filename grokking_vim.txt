@@ -12,6 +12,14 @@ To change within #Here and #There Block
 :g/#Here/.1,/#There/- -- move a line above, this becomes end of range
 :g/#Here/.1,/#There/-s/one/1/gp  -- change one to 1 in the block
 
+:.,$v/bar/d --  delete any lines which DON'T contain the string "bar."
+:g/^/+d -- delete every second row
+
 Print line with match and next line
 :g/one/.,.+2p  -- get line with one print that line and next two line
+
+Get every second line
+:py import vim; cb=vim.current.buffer;b=cb[:];cb[:]=b[::2] 
+:%!awk -- '++c\%2'
+:%!awk PVR\%2
 
