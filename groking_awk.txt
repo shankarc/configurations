@@ -1,0 +1,21 @@
+# Built in variables
+https://www.tutorialspoint.com/awk/awk_built_in_variables.htm
+ARGC
+ARGV
+CONVFMT -- convert format default %.6g
+ENVIRON
+FILENAME
+FS -- field separator also -F of command line
+NF -- Number of fields
+NR 
+FNR -- same as NR but for current field
+OFMT -- output format
+OFS 
+ORS  -output record separator
+RLENGTh -- length of string matched by match function
+RS -- record seperator
+RSTART -- start of string matched by match
+SUBSEP -- seperator char for array subscripts
+$0 -- entire input record
+
+
